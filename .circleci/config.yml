@@ -13,11 +13,11 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
-          name: powershell
-          command: |
-            powershell
-            dir
+      - type: shell
+        name: powershell
+        command: |
+          powershell
+          dir
       - run:
           name: dotnet
           command: |
