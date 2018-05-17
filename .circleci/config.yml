@@ -20,4 +20,5 @@ jobs:
       - run:
           name: dotnet
           command: |
-            dotnet restore
+            dotnet new console -o myApp
+            dir myApp
