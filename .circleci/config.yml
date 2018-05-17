@@ -16,7 +16,6 @@ jobs:
       - type: shell
         name: powershell
         command: |
-          powershell
           dir
       - run:
           name: dotnet
